@@ -5,7 +5,7 @@ def main():
 	for (dir, _, files) in os.walk(sys.argv[1]):
 		for f in files:
 			path = os.path.join(dir, f)
-			print("Find", f)
+			print("Found", f)
 			splitted = f.split(".")
 			if len(splitted) > 1 and splitted[-1] == "fb2":
 				print("Converting", f)
